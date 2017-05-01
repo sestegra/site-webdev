@@ -33,6 +33,13 @@
     <link href="{{ css.url }}" rel="stylesheet" type="text/css">
   {% endfor %}
 
+  <!-- For temp site deprecation notice -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <style>
+    html { font-size: 100%; } /* https://teamtreehouse.com/community/note-bootstrap-may-reset-your-base-fontsize */
+    .modal-dialog { top: 7%; } 
+  </style>
+
   <!--
       Why don't we use Dart here?
 

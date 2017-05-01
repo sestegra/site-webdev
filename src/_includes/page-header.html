@@ -6,3 +6,30 @@
   </div>
   {% endif %}
 </header>
+
+<form action="https://webdev.dartlang.org" method="post">
+  <div id="deprecationNoticeModal" class="modal fade">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Use webdev.dartlang.org</h1>
+        </div>
+        <div class="modal-body">
+          <p>
+            This temporary hosting site is deprecated.
+            The documentation for the stable release of AngularDart is
+            at <a href="https://webdev.dartlang.org">webdev.dartlang.org</a>.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Go to webdev.dartlang.org</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<script>
+  $(document).ready(function() {
+    $('#deprecationNoticeModal').modal('show');
+  });
+</script>
